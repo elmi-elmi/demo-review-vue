@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.31/vue.global.min.js"
+            integrity="sha512-C/bodwN49fOc1z+jln+2l9FlJ+lZ8HifB30oLE87zMQwsfoWv6Ed25b/x646tlcKb7515VJrJK8uo1oIH1UR2Q=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="assets/styles.css">
+    <title>Document</title>
+</head>
+<body>
+
+<div id="app">
+    <div class="nav-bar"></div>
+    <div class="product-display">
+        <div class="product-container">
+            <div class="product-image">
+                <img :src="image" alt="">
+            </div>
+            <div class="product-info">
+                <h1>{{product}}</h1>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!--import app-->
+<script src="main.js"></script>
+<!--mount app-->
+<script>
+    const mountedApp = app.mount('#app')
+</script>
+</body>
+</html>
